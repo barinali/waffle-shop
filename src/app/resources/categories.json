@@ -1,0 +1,42 @@
+[
+  {
+    "id": 7,
+    "name": "Women",
+    "parent": 0
+  },
+  {
+    "id": 8,
+    "name": "Men",
+    "parent": 0
+  },
+  {
+    "id": 1,
+    "name": "Women's Footwear",
+    "parent": 7
+  },
+  {
+    "id": 2,
+    "name": "Men's Footwear",
+    "parent": 8
+  },
+  {
+    "id": 3,
+    "name": "Women's Casualwear",
+    "parent": 7
+  },
+  {
+    "id": 4,
+    "name": "Men's Casualwear",
+    "parent": 8
+  },
+  {
+    "id": 5,
+    "name": "Women's Formalwear",
+    "parent": 7
+  },
+  {
+    "id": 6,
+    "name": "Men's Formalwear",
+    "parent": 8
+  }
+]
