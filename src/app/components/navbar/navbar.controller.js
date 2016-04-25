@@ -8,6 +8,6 @@
   /** @ngInject */
   function NavbarController(Categories) {
     var vm = this;
-    var categories = Categories.data;
+    vm.categories = Categories.data;
   }
 })();

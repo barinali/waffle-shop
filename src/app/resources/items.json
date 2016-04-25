@@ -4,90 +4,90 @@
     "price": 99,
     "discountedPrice": 99,
     "quantitiyInStock": 5,
-    "category": 1
+    "categoryId": 1
   },
   {
     "name": "Suede Shoes, Blue",
     "price": 42,
     "discountedPrice": 42,
     "quantitiyInStock": 4,
-    "category": 1
+    "categoryId": 1
   },
   {
     "name": "Leather Driver Saddle Loafers, Tan",
     "price": 34,
     "discountedPrice": 34,
     "quantitiyInStock": 12,
-    "category": 2
+    "categoryId": 2
   },
   {
     "name": "Flip Flops, Red",
     "price": 19,
     "discountedPrice": 19,
     "quantitiyInStock": 6,
-    "category": 2
+    "categoryId": 2
   },
   {
     "name": "Flip Flops, Blue",
     "price": 19,
     "discountedPrice": 19,
     "quantitiyInStock": 0,
-    "category": 2
+    "categoryId": 2
   },
   {
     "name": "Gold Button Cardigan, Black",
     "price": 167,
     "discountedPrice": 167,
     "quantitiyInStock": 6,
-    "category": 3
+    "categoryId": 3
   },
   {
     "name": "Cotton Shorts, Medium Red",
     "price": 30,
     "discountedPrice": 30,
     "quantitiyInStock": 5,
-    "category": 3
+    "categoryId": 3
   },
   {
     "name": "Fine Stripte Short Sleeve Shirt, Grey",
     "price": 49.99,
     "discountedPrice": 49.99,
     "quantitiyInStock": 9,
-    "category": 4
+    "categoryId": 4
   },
   {
     "name": "Fine Stripte Short Sleeve Shirt, Green",
     "price": 49.99,
     "discountedPrice": 39.99,
     "quantitiyInStock": 3,
-    "category": 4
+    "categoryId": 4
   },
   {
     "name": "Sharkskin Waistcoat, Charcoal",
     "price": 75,
     "discountedPrice": 75,
     "quantitiyInStock": 2,
-    "category": 6
+    "categoryId": 6
   },
   {
     "name": "Lightweight Patch Pocket Blazer, Deer",
     "price": 175,
     "discountedPrice": 175,
     "quantitiyInStock": 1,
-    "category": 6
+    "categoryId": 6
   },
   {
     "name": "Bird Print Dress, Black",
     "price": 270,
     "discountedPrice": 270,
     "quantitiyInStock": 10,
-    "category": 5
+    "categoryId": 5
   },
   {
     "name": "Mid Twist Cut-Out Dress, Pink",
     "price": 540,
     "discountedPrice": 540,
     "quantitiyInStock": 5,
-    "category": 5
+    "categoryId": 5
   }
 ]
