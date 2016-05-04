@@ -48,15 +48,18 @@
         controller: 'CategoryController',
         controllerAs: '_category',
         resolve: {
-          'Categories': function($q, lodash, $stateParams, ItemsFactory) {
+          'CategoryId': function($stateParams) {
+            return parseInt($stateParams.categoryId);
+          },
+          'Categories': function($q, lodash, CategoryId, ItemsFactory) {
             var deferred = $q.defer();
-
 
             ItemsFactory.getCategories().then(function(categories) {
               categories = categories.data;
 
               categories = lodash.filter(categories, function(category) {
-                return category.parent === parseInt($stateParams.categoryId);
+                return category.parent === CategoryId
+                  || (category.parent !== 0 && category.id === CategoryId);
               });
 
               deferred.resolve(categories);

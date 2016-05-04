@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "name": "Almond Toe Court Shoes, Patent Black",
     "price": 99,
     "discountedPrice": 99,
@@ -7,6 +8,7 @@
     "categoryId": 1
   },
   {
+    "id": 2,
     "name": "Suede Shoes, Blue",
     "price": 42,
     "discountedPrice": 42,
@@ -14,6 +16,7 @@
     "categoryId": 1
   },
   {
+    "id": 3,
     "name": "Leather Driver Saddle Loafers, Tan",
     "price": 34,
     "discountedPrice": 34,
@@ -21,6 +24,7 @@
     "categoryId": 2
   },
   {
+    "id": 4,
     "name": "Flip Flops, Red",
     "price": 19,
     "discountedPrice": 19,
@@ -28,6 +32,7 @@
     "categoryId": 2
   },
   {
+    "id": 5,
     "name": "Flip Flops, Blue",
     "price": 19,
     "discountedPrice": 19,
@@ -35,6 +40,7 @@
     "categoryId": 2
   },
   {
+    "id": 6,
     "name": "Gold Button Cardigan, Black",
     "price": 167,
     "discountedPrice": 167,
@@ -42,6 +48,7 @@
     "categoryId": 3
   },
   {
+    "id": 7,
     "name": "Cotton Shorts, Medium Red",
     "price": 30,
     "discountedPrice": 30,
@@ -49,6 +56,7 @@
     "categoryId": 3
   },
   {
+    "id": 8,
     "name": "Fine Stripte Short Sleeve Shirt, Grey",
     "price": 49.99,
     "discountedPrice": 49.99,
@@ -56,6 +64,7 @@
     "categoryId": 4
   },
   {
+    "id": 9,
     "name": "Fine Stripte Short Sleeve Shirt, Green",
     "price": 49.99,
     "discountedPrice": 39.99,
@@ -63,6 +72,7 @@
     "categoryId": 4
   },
   {
+    "id": 10,
     "name": "Sharkskin Waistcoat, Charcoal",
     "price": 75,
     "discountedPrice": 75,
@@ -70,6 +80,7 @@
     "categoryId": 6
   },
   {
+    "id": 11,
     "name": "Lightweight Patch Pocket Blazer, Deer",
     "price": 175,
     "discountedPrice": 175,
@@ -77,6 +88,7 @@
     "categoryId": 6
   },
   {
+    "id": 12,
     "name": "Bird Print Dress, Black",
     "price": 270,
     "discountedPrice": 270,
@@ -84,6 +96,7 @@
     "categoryId": 5
   },
   {
+    "id": 13,
     "name": "Mid Twist Cut-Out Dress, Pink",
     "price": 540,
     "discountedPrice": 540,

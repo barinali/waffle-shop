@@ -1,4 +1,4 @@
-<nav class="navbar navbar-static-top navbar-inverse">
+<nav class="navbar navbar-static-top navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" ui-sref="home">
@@ -11,8 +11,20 @@
         <li>
           <a href>Categories</a>
         </li>
-        <li ng-repeat="category in _navbar.categories" ng-if="!category.parent">
-          <a href ui-sref="category({ categoryId: category.id })" ng-bind="category.name"></a>
+
+        <li ng-repeat="category in _navbar.categories" ng-if="!category.parent" uib-dropdown on-toggle="toggled(open)">
+          <a ng-attr-id="dropdown-{{ category.id }}" uib-dropdown-toggle href ng-cloak>
+            {{ ::category.name }}
+
+            <span class="caret"></span>
+          </a>
+
+          <ul class="dropdown-menu" uib-dropdown-menu aria-labelledby="simple-dropdown">
+            <li ng-repeat="subCategory in _navbar.categories" ng-if="category.id === subCategory.parent">
+              <a href ui-sref="category({ categoryId: subCategory.id })" ng-bind="::subCategory.name"></a>
+
+            </li>
+          </ul>
         </li>
       </ul>
     </div>

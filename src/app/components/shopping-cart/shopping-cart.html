@@ -1,0 +1,19 @@
+<div class="panel panel-default" ng-controller="ShoppingCartController as _cart">
+  <div class="panel-heading">
+    <h3 class="panel-title">Shopping Cart</h3>
+  </div>
+
+  <div class="panel-body">
+    <span ng-show="!_cart.length">
+      Cart is empty. Buy somethings to see here.
+    </span>
+
+    <div ng-repeat="item in _cart.items track by $index">
+      {{ item.name | limitTo: 25 }}<span ng-if="item.name.length > 25">...</span>
+
+      € {{ item.price !== item.discountedPrice ? item.discountedPrice : item.price }}
+
+      <span class="pull-right" aria-hidden="true" ng-click="removeFromCart(item)">&times;</span>
+    </div>
+  </div>
+</div>

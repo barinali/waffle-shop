@@ -1,27 +1,26 @@
-
-<div class="jumbotron text-center">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="assets/images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p class="animated infinite" ng-class="main.classAnimation">
-    <button type="button" class="btn btn-lg btn-success" ng-click="main.showToastr()">Splendid Toastr</button>
-  </p>
-  <p>
-    With ♥ thanks to the contributions of<acme-malarkey extra-values="['Yeoman', 'Gulp', 'Angular']"></acme-malarkey>
-  </p>
-</div>
-
 <div class="row">
-  <div class="col-sm-6 col-md-4" ng-repeat="awesomeThing in main.awesomeThings | orderBy:'rank'">
-    <div class="thumbnail">
-      <img class="pull-right" ng-src="assets/images/{{ awesomeThing.logo }}" alt="{{ awesomeThing.title }}">
-      <div class="caption">
-        <h3>{{ awesomeThing.title }}</h3>
-        <p>{{ awesomeThing.description }}</p>
-        <p><a ng-href="{{awesomeThing.url}}">{{ awesomeThing.url }}</a></p>
+  <div class="col-sm-8">
+    <div class="row">
+      <div class="col-sm-6 col-md-4" ng-repeat="item in _main.items | orderBy: 'categoryId' track by $index">
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <h4 class="panel-title" ng-bind="::item.name"></h4>
+          </div>
+
+          <div class="panel-body">
+            <div ng-cloak><b>Price:</b><span ng-if="item.price !== item.discountedPrice"> € {{ ::item.discountedPrice }} instead of</span> € {{ ::item.price }}</div>
+            <div><b>Quantity in Stock:</b> {{ ::item.quantitiyInStock }}</div>
+
+            <br>
+
+            <a class="btn btn-primary btn-sm" href ng-click="_main.addToCart(item)"><b>Add to chart</b></a>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
+
+  <div class="col-sm-4">
+    <div ng-include="'app/components/shopping-cart/shopping-cart.html'"></div>
   </div>
 </div>

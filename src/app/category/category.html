@@ -1,11 +1,26 @@
 <div class="row">
-  <div class="col-sm-6 col-md-4" ng-repeat="item in _category.items | orderBy:'id'">
-    <div class="thumbnail">
-      <div class="caption">
-        <h4 ng-bind="::item.name"></h4>
-        <div ng-cloak><b>Price:</b><span ng-if="item.price !== item.discountedPrice"> € {{ ::item.discountedPrice }} instead of</span> € {{ ::item.price }}</div>
-        <div><b>Quantity in Stock:</b> {{ ::item.quantitiyInStock }}</div>
+  <div class="col-md-9 col-sm-8">
+    <div class="row">
+      <div class="col-sm-6 col-md-4" ng-repeat="item in _category.items | orderBy:'id'">
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <h4 class="panel-title" ng-bind="::item.name"></h4>
+          </div>
+
+          <div class="panel-body">
+            <div ng-cloak><b>Price:</b><span ng-if="item.price !== item.discountedPrice"> € {{ ::item.discountedPrice }} instead of</span> € {{ ::item.price }}</div>
+            <div><b>Quantity in Stock:</b> {{ ::item.quantitiyInStock }}</div>
+
+            <br>
+
+            <a class="btn btn-primary btn-sm" href ng-click="_main.addToChart(item)"><b>Add to chart</b></a>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
+
+  <div class="col-md-3 col-sm-4">
+    <div ng-include="'app/components/shopping-cart/shopping-cart.html'"></div>
   </div>
 </div>
